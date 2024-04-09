@@ -1,112 +1,60 @@
-# EliteHomes App
+# EmailGenie
 
-#### This repository contains the source code for a real estate web application built with React. The application allows users to browse, sell, and buy homes. Below you will find important information on how to get started with the project and the various technologies used.
+## Description
+This project aims to implement a web application called OneBox that provides a user-friendly interface for accessing and managing threads. It includes features such as login functionality, integration with Google login, fetching data from the server using API calls, keyboard shortcuts for efficient navigation, and a custom text editor with additional functionalities like saving and inserting variables.
 
+## Features
+1. **Login Page:** The application provides a login page for users to authenticate themselves.
+2. **Google Login Integration:** Users can log in using their Google accounts for convenience and security.
+3. **OneBox Screen:** After successful login, users are redirected to the OneBox screen, where they can view and manage threads.
+4. **Fetching Data:** The application fetches thread data from the server using API integration.
+   - `GET /onebox/list`: Fetches a list of threads.
+   - `GET /onebox/:thread_id`: Retrieves details of a specific thread.
+   - `DELETE /onebox/:thread_id`: Deletes a thread.
+5. **Keyboard Shortcuts:** Keyboard shortcuts enhance user experience by enabling quick actions.
+   - Pressing "D" deletes a thread.
+   - Pressing "R" opens the reply box for the selected thread.
+6. **Custom Text Editor:** The application includes a custom text editor with additional functionalities.
+   - Users can save their work using the "SAVE" button.
+   - The editor allows users to insert variables for easier content creation.
 
-## Getting Started
+## Implementation Details
+- **Frontend Technologies:** HTML, CSS, JavaScript, React.js
+- **Backend Technologies:** Node.js, Express.js
+- **API Endpoints:**
+  - Authentication:
+    - `/login`: Handles user login.
+  - OneBox:
+    - `GET /google-login`: Initiates Google login process.
+    - `GET /onebox/list`: Retrieves list of threads.
+    - `GET /onebox/:thread_id`: Retrieves details of a specific thread.
+    - `DELETE /onebox/:thread_id`: Deletes a thread.
+- **Third-party Services:**
+  - Google OAuth for authentication.
+- **Additional Libraries/Tools:**
+  - React Router for client-side routing.
+  - Axios for handling API requests.
+  - Custom text editor component for text editing functionality.
 
-### To run this project locally, follow these steps:
+## Setup Instructions
+1. Clone the repository from [GitHub Repo URL].
+2. Install dependencies using `npm install`.
+3. Configure environment variables for API keys, database connection strings, etc.
+4. Start the frontend and backend servers using `npm start`.
+5. Access the application through the provided URL.
 
-#### Step-1 : Clone the repository to your local machine using the following command:
-```
-git clone <repository_url>
-```
+## Future Enhancements
+- Implement user authentication and authorization for enhanced security.
+- Improve UI/UX design for a more visually appealing interface.
+- Add functionality for creating new threads.
+- Implement real-time updates using WebSockets for instant notifications.
+- Enhance text editor with additional formatting options such as bold, italic, etc.
 
-#### Step-2 : Navigate to the project directory:
-```
-cd real-estate-app
-```
+## Contributors
+- [Your Name/Email] - Project Lead & Developer
+- [Contributor Name/Email] - Frontend Developer
+- [Contributor Name/Email] - Backend Developer
+- [Contributor Name/Email] - UI/UX Designer
 
-#### Step-3 : Install the project dependencies:
-```
-npm install
-```
-#### Step-4 : Start the development server:
-```
-npm start
-```
-#### This will launch the application in your default browser at `http://localhost:3000`.
-
-# Technologies Used
-
-### The following technologies and libraries were used in the development of this project:
-#### 1. `Create React App`: A popular toolchain for creating React applications.
-
-#### 2. `Favicon Generator`: A web-based tool for generating favicons for your website.
-
-#### 3. `Tailwind CSS`: A utility-first CSS framework that provides a set of pre-defined classes for building responsive user interfaces.
-
-#### 4. `React Router`: A powerful routing library for React applications.
-
-#### 5. `Tailwind CSS Forms`: A plugin for Tailwind CSS that adds pre-styled form elements.
-
-#### 6. `Firebase and Firebase Authentication`: A cloud-based platform for building web and mobile applications, with a focus on authentication and data storage.
-
-#### 7. `React Toastify`: A popular library for displaying toast notifications in React applications.
-
-#### 8. `Google OAuth`: Integration with Google Sign-In for Firebase authentication.
-
-# Contributing
-#### Contributions to this project are welcome. If you find any issues or have any suggestions, please open an issue or submit a pull request.
-
-# License
-#### This project is licensed under the MIT License. Feel free to use and modify the code as per your requirements.
-
-# Disclaimer
-#### This application is for demonstration purposes only and does not provide real estate services. The content and data used in this application are fictional and should not be considered as accurate or reliable information for real estate transactions.
-
-# References
-
-#### create-react-app
-`https://legacy.reactjs.org/docs/create-a-new-react-app.html`
-
-#### Favicon Generator
-
-`https://favicon.io/favicon-generator/`
-
-#### Tailwind css 
-
-`https://tailwindcss.com/docs/guides/create-react-app`
-
-#### React Router
-
-`https://reactrouter.com/en/main/routers/picking-a-router`
-
-#### Tailwind CSS Forms
-
-`https://github.com/tailwindlabs/tailwindcss-forms`
-
-#### Firebase
-
-`https://firebase.google.com/`
-`https://firebase.google.com/docs/auth`
-
-#### React Tostify
-
-`https://www.npmjs.com/package/react-toastify`
-
-#### Google OAuth
-
-`https://firebase.google.com/docs/auth/web/google-signin`
-
-#### firebase image upload to cloud storage
-
-`https://firebase.google.com/docs/storage/web/upload-files`
-
-### React Moment 
-
-`https://www.npmjs.com/package/react-moment`
-
-### Swiper
-
-`https://swiperjs.com/`
-
-### React - Leaflet
-
-`https://react-leaflet.js.org/`
-
-### leaflet
-
-`https://leafletjs.com/download.html`
-
-
+## License
+This project is licensed under the [License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
