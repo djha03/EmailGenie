@@ -45,7 +45,7 @@ export default function Listing() {
   const position = [51.505, -0.09]
   return (
     <main>
-      <Swiper
+      {/* <Swiper         
         slidesPreView={1}
         navigation
         pagination={{ type: "progressbar" }}
@@ -64,7 +64,7 @@ export default function Listing() {
             ></div>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
       <div
         className="fixed top-[13%] right-[3%] z-10 bg-white cursor-pointer border-2 border-gray-400 rounded-full w-10 h-10 flex justify-center items-center"
         onClick={() => {
